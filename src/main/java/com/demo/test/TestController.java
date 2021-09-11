@@ -8,10 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/{id}")
     public String test(@PathVariable("id") String id){
-        return id;
+        return id + " String";
     }
     @GetMapping("/")
     public String test(){
         return "ok";
+    }
+    @GetMapping("/{id}")
+    public String test(@PathVariable("id") Integer id){
+        return "ok Integer";
     }
 }
