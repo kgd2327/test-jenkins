@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-    @GetMapping("/{id}")
+    @GetMapping("/test1/{id}")
     public String test1(@PathVariable("id") String id){
         return "ok test1 + "+id;
     }
@@ -14,7 +14,7 @@ public class TestController {
     public String test2(){
         return "ok test2";
     }
-    @GetMapping("/{id}")
+    @GetMapping("/test3/{id}")
     public String test3(@PathVariable("id") Integer id){
         return "ok test3 + "+id;
     }
