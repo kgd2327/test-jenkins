@@ -12,7 +12,7 @@ public class TestController {
     }
     @GetMapping("/")
     public String test2(){
-        return "ok test2";
+        return "ok test22222";
     }
     @GetMapping("/test3/{id}")
     public String test3(@PathVariable("id") Integer id){
